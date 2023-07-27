@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Societ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-family: 'Future', sans-serif;
+            font-size: 36px;
+            color: #0f0;
+        }
+
+        body::before {
+            content: "You have begun the puzzle. Good luck";
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .green-grids {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(to right, transparent 0%, transparent 33.333%, rgba(0, 255, 0, 0.2) 33.333%, rgba(0, 255, 0, 0.2) 66.666%, transparent 66.666%),
+                linear-gradient(to bottom, transparent 0%, transparent 33.333%, rgba(0, 255, 0, 0.2) 33.333%, rgba(0, 255, 0, 0.2) 66.666%, transparent 66.666%);
+            background-size: 3px 3px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-container img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        @font-face {
+            font-family: 'Future';
+            src: url('Future.ttf') format('truetype');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="green-grids"></div>
+    <div class="image-container">
+        <img src="Justice.png" alt="Image 1">
+        <img src="0.png" alt="Image 2">
+        <img src="Society.png" alt="Image 3">
+        <img src="Dice.png" alt="Image 4">
+    </div>
+</body>
+
+</html>
